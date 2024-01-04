@@ -1,0 +1,120 @@
+*{
+    overflow: hidden;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    cursor: none;
+}
+
+#name{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #fff;
+    user-select: none;
+    cursor: none;
+}
+
+#top-cover{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(113, 29, 176, 0.5);
+}
+
+#score{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #FFA732;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #FFA732;
+    user-select: none;
+}
+
+#lives{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #EF4040;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #EF4040;
+    user-select: none;
+}
+
+#level{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #C21292;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #C21292;
+    user-select: none;
+}
+
+#time{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 80%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px transparent;
+    user-select: none;
+}
+
+#cursor{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 48.35%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    pointer-events: none;
+}
+
