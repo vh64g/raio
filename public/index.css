@@ -106,6 +106,24 @@ canvas{
     user-select: none;
 }
 
+#discord{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px transparent;
+    user-select: none;
+}
+
 #cursor{
     z-index: 1;
     position: absolute;
