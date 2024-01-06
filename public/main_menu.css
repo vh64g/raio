@@ -1,0 +1,111 @@
+*{
+    overflow: hidden;
+}
+canvas{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    cursor: none;
+}
+
+#top-cover{
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(113, 29, 176, 0.5);
+}
+
+#discord{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px transparent;
+    user-select: none;
+}
+
+.button{
+    cursor: none;
+    z-index: 1;
+}
+
+.btn-back{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: none;
+    transition: 0.5s;
+}
+
+.btn-back:hover{
+    background-color: rgba(10, 10, 10, 0.5);
+}
+
+.btn-back:active{
+    border: 2px solid rgba(10, 10, 10, 0.5);
+}
+
+#btn-back-classic{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 100px;
+}
+
+#play-classic{
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+#cursor{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 48.35%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 30%;
+    pointer-events: none;
+}
+

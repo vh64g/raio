@@ -88,7 +88,7 @@ function Circle() {
                     if (lives === 0) {
                         running = false;
                         name.innerHTML = `Game Over!`;
-                        setTimeout(() => {window.location.reload();}, 2000);
+                        setTimeout(() => {window.location.href="../main_menu.html";}, 2000);
                     } else {circles.splice(circles.indexOf(this), 1);}
                 }
             }
