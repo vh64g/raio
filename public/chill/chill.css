@@ -13,6 +13,32 @@ canvas{
     cursor: none;
 }
 
+#name{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    user-select: none;
+    cursor: none;
+    transition: 0.5s;
+}
+
+#name:hover{
+    scale: 1.1;
+}
+
+#name:active{
+    scale: 1.12;
+}
+
 #top-cover{
     z-index: 1;
     position: absolute;
@@ -21,6 +47,72 @@ canvas{
     height: 100px;
     transform: translate(-50%, -50%);
     background-color: rgba(113, 29, 176, 0.5);
+}
+
+#score{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #FFA732;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #FFA732;
+    user-select: none;
+}
+
+#lives{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #EF4040;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #EF4040;
+    user-select: none;
+}
+
+#level{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 30%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    color: #C21292;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-shadow: 0 0 10px #C21292;
+    user-select: none;
+}
+
+#time{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    left: 80%;
+    transform: translateX(-50%);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px transparent;
+    user-select: none;
 }
 
 #discord{
@@ -38,91 +130,6 @@ canvas{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 10px transparent;
-    user-select: none;
-}
-
-.button{
-    cursor: none;
-    z-index: 1;
-}
-
-.btn-back{
-    z-index: 1;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    border: 2px solid white;
-    border-radius: 30px;
-    cursor: none;
-    transition: 0.5s;
-}
-
-.btn-back:hover{
-    background-color: rgba(10, 10, 10, 0.5);
-}
-
-.btn-back:active{
-    border: 2px solid rgba(10, 10, 10, 0.5);
-}
-
-#btn-back-classic{
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 100px;
-}
-
-#play-classic{
-    z-index: 1;
-    position: absolute;
-    width: 300px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,  -50%);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    user-select: none;
-}
-
-#btn-back-chill{
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 100px;
-}
-
-#play-chill{
-    z-index: 1;
-    position: absolute;
-    width: 300px;
-    height: 100px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    background: linear-gradient(90deg, rgba(194,18,146,1) 0%, rgba(239,64,64,1) 50%, rgba(255,167,50,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     user-select: none;
 }
 

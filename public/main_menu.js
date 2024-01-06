@@ -1,4 +1,5 @@
 const classic_btn = document.querySelector('#play-classic');
+const chill_btn = document.querySelector('#play-chill');
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -99,4 +100,8 @@ window.addEventListener('mouseout', () => {
 
 classic_btn.addEventListener('click', () => {
     window.location.href = '/classic/classic.html';
+});
+
+chill_btn.addEventListener('click', () => {
+    window.location.href = '/chill/chill.html';
 });
