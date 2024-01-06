@@ -12,7 +12,9 @@ const getRandom = (min, max) => Math.floor(Math.random()*(max-min+1)+min);
 let circles = [];
 let colors = ['#711DB0', '#C21292', '#EF4040', '#FFA732'];
 
-let running = true;
+let running = false;
+let fps;
+let frame_count_start = 0;
 
 let t = [];
 let time = 0;
@@ -60,8 +62,9 @@ function Circle() {
      this.x = getRandom(this.radius, canvas.width-this.radius);
      this.y = getRandom(this.radius, canvas.height-this.radius);
      this.color = colors[getRandom(0, colors.length-1)];
-     this.dx = speed*((this.radius/10)*(Math.random()-0.5));
-     this.dy = speed*((this.radius/10)*(Math.random()-0.5));
+     this.relative_speed = 144/fps;
+     this.dx = this.relative_speed*speed*((this.radius/10)*(Math.random()-0.5));
+     this.dy = this.relative_speed*speed*((this.radius/10)*(Math.random()-0.5));
 
      this.clicked = function() {
             if (this.radius === 50) {
@@ -137,23 +140,24 @@ function manageTime(now) {
     t.unshift(now);
     if (t.length > 10) {
         let t0 = t.pop();
-        let fps = Math.floor(1000 * 10 / (now - t0));
+        fps = Math.floor(1000 * 10 / (now - t0));
         if(fps>0){time+=1/fps;}
         timeText.innerHTML = `Time: ${Math.floor(time)} | FPS: ${fps}`;
     }
 }
 
 function animate(now) {
+    requestAnimationFrame(animate);
+    manageTime(now);
+    if(frame_count_start<11 && frame_count_start >= 0){frame_count_start++;}else{if(frame_count_start>10){running=true;frame_count_start=-1;circles = createCircles();}}
+    console.log(frame_count_start);
     if(!running){return;}
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     circles.forEach(circle => circle.update());
-    manageTime(now);
-    requestAnimationFrame(animate);
 }
 
 function pageLoad() {
   setCanvasSize();
-  circles = createCircles();
   animate(circles);
 }
 
